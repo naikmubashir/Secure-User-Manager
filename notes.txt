@@ -14,5 +14,8 @@ write the builtin middlewares:
 create the html pages in the views folder: index.html, 404.html, new-page.html .Link the css file to it.Which is present in the public folder in root dir. : public/css/style.css
 create a routes folder
 create a router for root page /index page -> root.js
-    write the code in root.js to serve the html files
-    the import this router in main server.js file
+        write the code in root.js to serve the html files
+        the import this router in main server.js file
+create mongoose schema for Users and Employee:
+        create User.js and Employee.js in model folder
+        create the mongoose schema in them
