@@ -22,3 +22,4 @@ create mongoose schema for Users and Employee:
 
 Create a registration route ,registerController to register new user
         npm i bcrypt
+        check for ./public/img/rregisterNewUserPOSTRequest.png  It is the screenshot of the post request=>registration of new user
