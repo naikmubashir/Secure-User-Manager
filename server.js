@@ -14,7 +14,8 @@ app.use( express.urlencoded({extended:false}) );
 app.use(express.json());
 app.use( express.static(path.join(__dirname,'public')) ); //here the static files(css,img,text) will be present 
 
-
+//router for root:
+app.use('/', require('./routes/root'));
 
 //making sure to only listen when the database is connected
 mongoose.connection.once("open",()=>{
