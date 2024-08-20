@@ -5,8 +5,15 @@ const connectDB = require('./config/DBconn');
 const app = express();
 const PORT = process.env.PORT || 3500;
 const mongoose = require('mongoose');
+const path = require("path");
 
 connectDB();
+
+//buildin middlewares
+app.use( express.urlencoded({extended:false}) );
+app.use(express.json());
+app.use( express.static(path.join(__dirname,'public')) ); //here the static files(css,img,text) will be present 
+
 
 
 //making sure to only listen when the database is connected
