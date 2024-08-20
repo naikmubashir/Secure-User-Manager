@@ -6,9 +6,11 @@ const app = express();
 const PORT = process.env.PORT || 3500;
 const mongoose = require('mongoose');
 const path = require("path");
+const cors = require('cors');
+
 
 connectDB();
-
+app.use(cors());
 //buildin middlewares
 app.use( express.urlencoded({extended:false}) );
 app.use(express.json());

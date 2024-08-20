@@ -1,7 +1,9 @@
 const express= require('express');
 const router= express.Router();
 const registerController= require('../controllers/registerControllers');
+const path = require('path');
 
-router.post('/',registerController);
+router.route('/')
+.post(registerController)
 
 module.exports = router;
