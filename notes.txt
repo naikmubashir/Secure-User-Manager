@@ -4,4 +4,5 @@ npm i mongoose
 mongodb.com ---> create database--> connect -->copy the connection string
 create .env file in root directory
 put the connection string in the .env file
-create config dir --> create DBconn.js in it
+npm i dotenv
+create config dir --> create DBconn.js in it-->export the function --> use in server.js-->connectDB()
