@@ -18,7 +18,7 @@ app.use( express.static(path.join(__dirname,'public')) ); //here the static file
 app.use('/', require('./routes/root'));
 
 //registerRoute
-app.use('/register',require('./route/register'));
+app.use('/register',require('./routes/register'));
 
 app.all('*',(req,res)=>{
     res.status(404);
