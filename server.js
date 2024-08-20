@@ -22,6 +22,11 @@ app.use('/', require('./routes/root'));
 //registerRoute
 app.use('/register',require('./routes/register'));
 
+//auth route
+app.use('/auth',require('./routes/auth'));
+
+
+
 app.all('*',(req,res)=>{
     res.status(404);
     if(req.accepts('html')){
