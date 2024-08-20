@@ -6,3 +6,13 @@ create .env file in root directory
 put the connection string in the .env file
 npm i dotenv
 create config dir --> create DBconn.js in it-->export the function --> use in server.js-->connectDB()
+check if the database is connected before listening to the port. And only listen if the DB is connected
+write the builtin middlewares:
+        To handle urlencoded data/form data 
+        For json 
+        For serving static files  //self:-  setting folder for serving css files
+create the html pages in the views folder: index.html, 404.html, new-page.html .Link the css file to it.Which is present in the public folder in root dir. : public/css/style.css
+create a routes folder
+create a router for root page /index page -> root.js
+    write the code in root.js to serve the html files
+    the import this router in main server.js file

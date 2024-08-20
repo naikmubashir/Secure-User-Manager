@@ -12,5 +12,5 @@ connectDB();
 //making sure to only listen when the database is connected
 mongoose.connection.once("open",()=>{
     console.log("Connected to MongoDB....");
-    app.listen(PORT, ()=>console.log(  `app connected to port ${PORT}`))
+    app.listen(PORT, ()=>console.log(`Server runnign on port ${PORT}`))
 })
