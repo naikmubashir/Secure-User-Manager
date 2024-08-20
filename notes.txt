@@ -19,3 +19,6 @@ create a router for root page /index page -> root.js
 create mongoose schema for Users and Employee:
         create User.js and Employee.js in model folder
         create the mongoose schema in them
+
+Create a registration route ,registerController to register new user
+        npm i bcrypt
