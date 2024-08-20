@@ -17,6 +17,9 @@ app.use( express.static(path.join(__dirname,'public')) ); //here the static file
 //router for root:
 app.use('/', require('./routes/root'));
 
+//registerRoute
+app.use('/register',require('./route/register'));
+
 app.all('*',(req,res)=>{
     res.status(404);
     if(req.accepts('html')){
