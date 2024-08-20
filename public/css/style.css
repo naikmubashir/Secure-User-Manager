@@ -1,0 +1,16 @@
+*{
+    background-color: #000;
+    color: #fff;
+    font-size: 2rem;
+}
+body{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100dvh;
+}
+img{
+    height: 460px;
+    width: auto;
+    border-radius: 39px;
+}
