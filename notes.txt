@@ -30,3 +30,4 @@ create auth route and authController to login existing user
         add ACCESS_TOKEN_SECRET and REFRESH_TOKEN_SECRET in .env file using:-> require('crypto').randomBytes(64).toString('hex')
 create verifyJWT middleware
 create employee route in api folder in routers folder. And create employeeController to GET,PUT,POST,DELETE an employee.
+Add verifyRoles. And use it in employeesRoute to verify roles before getting/updating/creating/deleting an employee
