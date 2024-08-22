@@ -7,6 +7,7 @@ const PORT = process.env.PORT || 3500;
 const mongoose = require('mongoose');
 const path = require("path");
 const cors = require('cors');
+const verifyJWT = require('./middleware/verifyJWT')
 
 
 connectDB();
@@ -24,6 +25,9 @@ app.use('/register',require('./routes/register'));
 
 //auth route
 app.use('/auth',require('./routes/auth'));
+
+//verifying jwt before getting/posting/puting/deleting the employees
+app.use(verifyJWT);
 
 
 
