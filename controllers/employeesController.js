@@ -9,12 +9,13 @@ const getAllEmployees = async (req,res)=>{
 const createNewEmployee= async (req, res)=>{
     if(!req?.body?.firstname || !req?.body?.lastname) return res.status(400).json({"message":"Firstname and lastname are required..."});
     try{
-        const newEmployee = Employee.create(
+        const newEmployee = await Employee.create(
             {
                 firstname: req.body.firstname,
                 lastname:req.body.lastname
             }
         );
+        console.log(newEmployee);
         res.status(201).json(newEmployee);
     }
     catch(err){
