@@ -15,8 +15,8 @@ const userSchema= new Schema({
             type:Number,
             default:2001
         },
-        admin:Number,
-        editor:Number
+        Admin:Number,
+        Editor:Number
     },
     refreshToken:String
 });
